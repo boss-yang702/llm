@@ -1,0 +1,79 @@
+2025-05-03 12:32:30 | ERROR | stderr | config.json:   0%|                                                                                                                         | 0.00/910 [00:00<?, ?B/s]
+2025-05-03 12:32:30 | ERROR | stderr | config.json: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 910/910 [00:00<00:00, 2.30MB/s]
+2025-05-03 12:32:30 | ERROR | stderr | 
+2025-05-03 12:32:33 | ERROR | stderr | configuration_qwen.py:   0%|                                                                                                             | 0.00/2.35k [00:00<?, ?B/s]
+2025-05-03 12:32:33 | ERROR | stderr | configuration_qwen.py: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 2.35k/2.35k [00:00<00:00, 36.2MB/s]
+2025-05-03 12:32:33 | ERROR | stderr | 
+2025-05-03 12:32:42 | ERROR | stderr | tokenizer_config.json:   0%|                                                                                                               | 0.00/173 [00:00<?, ?B/s]
+2025-05-03 12:32:42 | ERROR | stderr | tokenizer_config.json: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 173/173 [00:00<00:00, 1.35MB/s]
+2025-05-03 12:32:42 | ERROR | stderr | 
+2025-05-03 12:32:44 | ERROR | stderr | tokenization_qwen.py:   0%|                                                                                                              | 0.00/9.62k [00:00<?, ?B/s]
+2025-05-03 12:32:44 | ERROR | stderr | tokenization_qwen.py: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 9.62k/9.62k [00:00<00:00, 10.9MB/s]
+2025-05-03 12:32:44 | ERROR | stderr | 
+2025-05-03 12:32:46 | ERROR | stderr | qwen.tiktoken:   0%|                                                                                                                     | 0.00/2.56M [00:00<?, ?B/s]
+2025-05-03 12:32:48 | ERROR | stderr | qwen.tiktoken: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.56M/2.56M [00:01<00:00, 1.69MB/s]
+2025-05-03 12:32:48 | ERROR | stderr | qwen.tiktoken: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.56M/2.56M [00:01<00:00, 1.68MB/s]
+2025-05-03 12:32:48 | ERROR | stderr | 
+2025-05-03 12:32:53 | ERROR | stderr | generation_config.json:   0%|                                                                                                              | 0.00/249 [00:00<?, ?B/s]
+2025-05-03 12:32:53 | ERROR | stderr | generation_config.json: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 249/249 [00:00<00:00, 892kB/s]
+2025-05-03 12:32:53 | ERROR | stderr | 
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]: Traceback (most recent call last):
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     return _run_code(code, main_globals, None,
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 86, in _run_code
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     exec(code, run_globals)
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/fastchat/serve/vllm_worker.py", line 290, in <module>
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     engine = AsyncLLMEngine.from_engine_args(engine_args)
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/engine/async_llm_engine.py", line 680, in from_engine_args
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     return async_engine_cls.from_vllm_config(
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/engine/async_llm_engine.py", line 653, in from_vllm_config
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     return cls(
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/engine/async_llm_engine.py", line 608, in __init__
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     self.engine = self._engine_class(*args, **kwargs)
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/engine/async_llm_engine.py", line 267, in __init__
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     super().__init__(*args, **kwargs)
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 281, in __init__
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     self.model_executor = executor_class(vllm_config=vllm_config, )
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 286, in __init__
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     super().__init__(*args, **kwargs)
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 52, in __init__
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     self._init_executor()
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 125, in _init_executor
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     self._run_workers("load_model",
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 185, in _run_workers
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     driver_worker_output = run_method(self.driver_worker, sent_method,
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/utils.py", line 2347, in run_method
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     return func(*args, **kwargs)
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/worker/cpu_worker.py", line 233, in load_model
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     self.model_runner.load_model()
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/worker/cpu_model_runner.py", line 491, in load_model
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     self.model = get_model(vllm_config=self.vllm_config)
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/model_executor/model_loader/__init__.py", line 14, in get_model
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     return loader.load_model(vllm_config=vllm_config)
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/model_executor/model_loader/loader.py", line 441, in load_model
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     model = _initialize_model(vllm_config=vllm_config)
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/model_executor/model_loader/loader.py", line 127, in _initialize_model
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     return model_class(vllm_config=vllm_config, prefix=prefix)
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/model_executor/models/qwen.py", line 359, in __init__
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     super().__init__(vllm_config=vllm_config, prefix=prefix)
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/model_executor/models/qwen.py", line 267, in __init__
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     self.transformer = transformer_type(vllm_config=vllm_config,
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/compilation/decorators.py", line 151, in __init__
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     old_init(self, vllm_config=vllm_config, prefix=prefix, **kwargs)
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/model_executor/models/qwen.py", line 205, in __init__
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     self.start_layer, self.end_layer, self.h = make_layers(
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/model_executor/models/utils.py", line 609, in make_layers
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     [PPMissingLayer() for _ in range(start_layer)] + [
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/model_executor/models/utils.py", line 610, in <listcomp>
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     maybe_offload_to_cpu(layer_fn(prefix=f"{prefix}.{idx}"))
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/model_executor/models/qwen.py", line 207, in <lambda>
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     lambda prefix: QWenBlock(
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/model_executor/models/qwen.py", line 161, in __init__
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     self.mlp = QWenMLP(config.hidden_size,
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/model_executor/models/qwen.py", line 63, in __init__
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     self.act_fn = SiluAndMul()
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/vllm/model_executor/layers/activation.py", line 68, in __init__
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     self.op = torch.ops._C.silu_and_mul
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:   File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_ops.py", line 1232, in __getattr__
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]:     raise AttributeError(
+2025-05-03 12:32:54 | ERROR | stderr | [rank0]: AttributeError: '_OpNamespace' '_C' object has no attribute 'silu_and_mul'
